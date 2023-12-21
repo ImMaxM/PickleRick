@@ -1,1 +1,3 @@
-console.log('Hello world!')
+import log from "./utils/logger";
+
+log.info("Hello, world!");
