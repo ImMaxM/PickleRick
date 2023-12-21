@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "name": "picklerick",
+  "description": "🤖 A Discord Bot that gives all types of information about the TV Show Rick and Morty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImMaxM/PickleRick.git"
+  },
+  "author": "ImMaxM",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ImMaxM/PickleRick/issues"
+  },
+  "homepage": "https://github.com/ImMaxM/PickleRick#readme"
+}
