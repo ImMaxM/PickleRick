@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   },
   "name": "picklerick",
@@ -7,7 +9,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ImMaxM/PickleRick/issues"
   },
-  "homepage": "https://github.com/ImMaxM/PickleRick#readme"
+  "homepage": "https://github.com/ImMaxM/PickleRick#readme",
+  "dependencies": {
+    "winston": "^3.11.0"
+  }
 }
