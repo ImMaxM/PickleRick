@@ -10,9 +10,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
+    "watch": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "start": "ts-node ./src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "deploy": "ts-node ./src/index.ts deploy"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   },
   "homepage": "https://github.com/ImMaxM/PickleRick#readme",
   "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.3.1",
     "pino": "^8.17.1",
     "pino-pretty": "^10.3.0"
   }
