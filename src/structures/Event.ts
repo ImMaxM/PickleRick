@@ -1,4 +1,4 @@
-import { Client, CommandInteraction } from "discord.js";
+import { Client, CommandInteraction, Interaction } from "discord.js";
 
 export type EventOptions = {
   name: string;
@@ -9,7 +9,7 @@ export type EventOptions = {
 export default class Event {
   constructor(public options: EventOptions) {}
 
-  async exec(interaction: CommandInteraction) {
+  async exec(interaction: Interaction) {
     throw new Error("Execute function not implemented.");
   }
 

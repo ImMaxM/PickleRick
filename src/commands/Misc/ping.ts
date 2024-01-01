@@ -1,5 +1,5 @@
 import SlashCommand from "../../structures/Command";
-import { CommandInteraction, PermissionFlagsBits } from "discord.js";
+import { ChatInputCommandInteraction } from "discord.js";
 import { primaryEmbed } from "../../utils/embed";
 
 export default class ExampleCommand extends SlashCommand {
@@ -10,7 +10,7 @@ export default class ExampleCommand extends SlashCommand {
     });
   }
 
-  async exec(interaction: CommandInteraction) {
+  async exec(interaction: ChatInputCommandInteraction) {
     await interaction.deferReply();
 
     await interaction.editReply({

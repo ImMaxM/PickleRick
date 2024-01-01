@@ -1,4 +1,4 @@
-import { CommandInteraction } from "discord.js";
+import { ChatInputCommandInteraction } from "discord.js";
 import Event from "../structures/Event";
 import { commands } from "..";
 import log from "../utils/logger";
@@ -12,7 +12,7 @@ export default class InteractionEvent extends Event {
     });
   }
 
-  async exec(interaction: CommandInteraction) {
+  async exec(interaction: ChatInputCommandInteraction) {
     if (!interaction.isChatInputCommand()) return;
 
     const commandName = interaction.commandName;

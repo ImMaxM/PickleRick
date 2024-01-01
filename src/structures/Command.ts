@@ -1,4 +1,9 @@
-import { ChatInputCommandInteraction } from "discord.js";
+import {
+  ChatInputCommandInteraction,
+  Client,
+  RESTPostAPIApplicationCommandsJSONBody,
+  SlashCommandBuilder,
+} from "discord.js";
 
 export type SlashCommandOptions = {
   name: string;
@@ -14,5 +19,12 @@ export default class SlashCommand {
 
   async register() {
     throw new Error("Register function not implemented.");
+  }
+
+  build(
+    client: Client,
+    command: SlashCommandBuilder
+  ): SlashCommandBuilder | RESTPostAPIApplicationCommandsJSONBody {
+    return command;
   }
 }

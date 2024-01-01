@@ -4,6 +4,8 @@ import fs from "fs";
 import SlashCommand from "./structures/Command";
 import path from "path";
 
+log.info("Starting PickleRick...");
+
 import "./utils/config";
 import { config } from "./utils/config";
 
@@ -68,3 +70,5 @@ Promise.all([cmdsLoading]).then(() => {
     client.login(config.TOKEN);
   });
 });
+
+import "./handlers/meili";
