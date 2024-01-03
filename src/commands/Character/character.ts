@@ -7,7 +7,7 @@ import {
 import { primaryEmbed } from "../../utils/embed";
 import Meili from "../../handlers/meili";
 
-export default class ExampleCommand extends SlashCommand {
+export default class CharacterCommand extends SlashCommand {
   constructor() {
     super({
       name: "character",
