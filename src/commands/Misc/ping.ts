@@ -17,7 +17,7 @@ export default class ExampleCommand extends SlashCommand {
       embeds: [
         primaryEmbed(
           "Pong!",
-          `Latency: \`${Date.now() - interaction.createdTimestamp}ms\``
+          `Latency: [\`${Date.now() - interaction.createdTimestamp}ms\`](https://github.com/ImMaxM/PickleRick)`
         ),
       ],
     });
